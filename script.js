@@ -1,10 +1,12 @@
-const futureDate = '8 11 2022';
+var futureDate = new Date();
 /*mes dia ano*/ 
 
 const daysel = document.getElementById('days');
 const hoursel = document.getElementById('hours');
 const minutesel = document.getElementById('mins');
 const secondsel = document.getElementById('seconds');
+const button = document.getElementById('button');
+const date = document.getElementById('date');
 
 function countdown() {
     const eventDate = new Date(futureDate); 
@@ -37,6 +39,10 @@ function formatTime(time) {
         }
     }
 
+}
+
+function changeDate() {
+        futureDate = date.value;
 }
 
 countdown();

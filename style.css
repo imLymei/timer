@@ -40,3 +40,14 @@ h1 {
 .Timer span {
     font-size: 1.5rem;
 }
+
+.button-c {
+    display: flex;
+    flex-direction: column;
+    margin-top: 58vh;
+}
+
+button {
+    color: white;
+    background-color: black;
+}
